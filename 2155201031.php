@@ -1,13 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html leng="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-</head>
+</head>    
 <body>
-    <h1>Hello, This is me indra kurniawan</h1>
+    <h1> Indra kurniawan </h1>
     <h2> 2155201031 </h2>
 </body>
-</html>
+</html>  
