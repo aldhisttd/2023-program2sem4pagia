@@ -7,8 +7,7 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Hello Everyone !</h1>
-    <h2>This is me Yossi Yesaya</h2>
+    <h1>Hello, This is me Dhea Amanda</h1>
+    <h2>Ini project pertama saya</h2>
 </body>
 </html>
-
