@@ -9,6 +9,6 @@
 <body>
     <h1>Hello world !</h1>
     <h2>This is me Yossi Yesaya</h2>
-</body>gi
+</body>
 </html>
 
