@@ -8,6 +8,6 @@
 </head>
 <body>
     <h1>Hallo semua, saya Ridiah Ayu Vitaloka</h1>
-    <h2>Saya suka masak,suka nyemil,suka nonton anime,drakor,semuanya lah.udah gitu aja bye ya</h2>
+    <h2>Saya suka masak,suka nyemil,suka nonton anime,drakor,semuanya lah.udah gitu aja bye yagit</h2>
 </body>
 </html>
