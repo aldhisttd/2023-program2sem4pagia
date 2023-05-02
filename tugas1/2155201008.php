@@ -4,7 +4,6 @@
     </head>
     <body>
         <h3>Data Mahasiswa</h3>
-
         <table>
             <tr>
                 <td>Nama</td>
