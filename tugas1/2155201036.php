@@ -7,17 +7,17 @@
 
         <table>
             <tr>
-                <td>Ridiah</td>
+                <td>Nama</td>
                 <td>:</td>
                 <td><input type="text"></td>
             </tr>
             <tr>
-                <td>2155201036</td>
+                <td>NIM</td>
                 <td>:</td>
                 <td><input type="text"></td>
             </tr>
             <tr>
-                <td>22 february 2002</td>
+                <td>Tanggal Lahir</td>
                 <td>:</td>
                 <td><input type="date"></td>
             </tr>
