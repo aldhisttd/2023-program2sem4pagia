@@ -1,11 +1,8 @@
 <!DOCTYPE HTML>
 <html>
     <head>
-<<<<<<< HEAD
         <title>CAHAYADINA</title>
-=======
-        <title>Tugas Mahmud Alburozi</title>
->>>>>>> f1bc033a13e7e44643f20f6165fac585b5bbe428
+
         <link rel="stylesheet" href="style.css">
     </head>
 <style>
