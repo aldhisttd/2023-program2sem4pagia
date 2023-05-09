@@ -16,9 +16,6 @@
                 <td>:</td>
                 <td><input type="date"></td>
             </tr>
-            <tr>
-                <td colspan="2"><input type="submit" value="Simpan"></td>
-            </tr>
         </table>
     </body>
 </html>
