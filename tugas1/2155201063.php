@@ -3,7 +3,7 @@
 	<title>MAHASISWA</title>
 </head><l
 <body>
-<div class="login">
+<div class="DATA MAHASISWA">
     <h3 class="login-header">MAHASISWA</h2>
         <form class="login-container">
             <p>
