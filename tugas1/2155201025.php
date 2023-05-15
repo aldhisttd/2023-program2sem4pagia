@@ -1,37 +1,25 @@
 <!DOCTYPE html>
-<!-- Created By CodingNepal -->
-<html lang="en" dir="ltr">
-   <head>
-      <meta charset="utf-8">
-      <!-- <title>Neumorphism Login Form UI | CodingNepal</title> -->
-      <link rel="stylesheet" href="style.css">
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
-   </head>
-   <body>
-      <div class="content">
-         <div class="text">
-            Format Masuk
-         </div>
-         <form action="#">
-            <div class="field">
-               <input type="text" required>
-               <span class="fas fa-user"></span>
-               <label>Email</label>
-            </div>
-            <div class="field">
-               <input type="password" required>
-               <span class="fas fa-lock"></span>
-               <label>Kata Sandi</label>
-            </div>
-            <div class="forgot-pass">
-               <a href="#">Lupa Kata Sandi?</a>
-            </div>
-            <button>Masuk</button>
-            <div class="sign-up">
-               Belum Daftar?
-               <a href="#">Daftar</a>
-            </div>
-         </form>
-      </div>
-   </body>
+<html>
+<head>
+    <title>mahasiswa</title>
+</head>
+<body>
+    <h3>Data mahasiswa</title>
+        <table>
+             <tr>
+                 <td>nama</td>
+                 <td>:</td>
+                 <td><input type="text"
+></td>
+             </tr>
+             <tr>
+                 <td>tanggal lahir</td>
+                 <td>:</td>
+                 <td><input type="date"
+></td>
+            </tr>
+    </table>
+    </body>
 </html>
+=======
+>>>>>>> c1e7601dd984fa154ad6f336eb01a4b063df484a
