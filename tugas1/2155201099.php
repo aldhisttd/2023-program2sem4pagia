@@ -41,24 +41,9 @@ tr {
                 <td colspan="2"><input type="submit" value="Cahaya Dina Nuzula"></td>
             </tr>
             <tr>
-                <td>NIM</td>
-                <td>: </td>
-                <td colspan="2"><input type="submit" value="2155201099"></td>
-            </tr>
-            <tr>
                 <td>Tanggal Lahir</td>
                 <td>:</td>
                 <td colspan="2"><input type="submit" value="09 April 2003"></td>
-            </tr>
-            <tr>
-                <td>Jurusan</td>
-                <td>:</td>
-                <td colspan="2"><input type="submit" value="Informatika"></td>
-            </tr>
-            <tr>
-                <td>Agama</td>
-                <td>:</td>
-                <td colspan="2"><input type="submit" value="Islam"></td>
             </tr>
             </tr>
         </table>
