@@ -7,7 +7,7 @@
 
         <table>
             <tr>
-                <td>Ridiah ayu </td>
+                <td>Ridiah ayu</td>
                 <td>:</td>
                 <td><input type="text"></td>
             </tr>
