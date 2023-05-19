@@ -9,5 +9,6 @@
 <body>
     <h1>Saya Dian Afriandi</h1>
     <h2>Tugas 2</h2>
+    <h2>Tugas 2</h2>
 </body>
 </html>
