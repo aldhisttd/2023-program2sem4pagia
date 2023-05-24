@@ -23,7 +23,7 @@
   echo "Nama: " . $nama . "<br>";
   echo "Alamat: " . $alamat . "<br>";
   echo "Tanggal Lahir: " . $tgl_lahir . "<br>";
-  echo "Photo: <img src='" . $target_file . "' alt='Photo Mahasiswa' width='200'>";
+  echo "Photo: <img src='" . $target_file . "' alt='Photo Mahasiswa' width='150'>";
   ?>
 </body>
 </html>
