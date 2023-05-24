@@ -8,7 +8,7 @@
 </head>
 <body>
     <h3>Form Data Mahasiswa</h1> 
-    <form action="proses2.php" method="POST" enctype="multipart/form-data">
+    <form action="proses.php" method="POST" enctype="multipart/form-data">
             <label for="">Nama</label>
             <input name="input_nama" type="text"><br>
             <br>
