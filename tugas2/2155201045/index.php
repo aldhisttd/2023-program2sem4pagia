@@ -30,7 +30,7 @@
         <td><input type="file" name="foto" accept="images/*"></td>
     </tr>
     <tr>
-        <td colspan="2"><input type="submit" name="spn" value="simpan"></td>
+        <td colspan="2"><input type="submit" name="spn" value="submit"></td>
     </tr>
 </table>
     </form>
