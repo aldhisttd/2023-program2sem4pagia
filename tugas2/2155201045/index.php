@@ -1,39 +1,36 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MAHASISWA</title>
-</head>
-<body>
-    <form action="proses.php"method="post"entype="multipart/from-data">
+<html>
+    <head>
+        <title>Mahasiswa</title>
+    </head>
+    <body>
+        <h3>Data Mahasiswa</h3>
+<form action="proses.php" method="POST" enctype="multipart/form-data">
 <table>
-    <tr>
-        <td>nama</td>
-        <td>:</td>
-        <td><input type="text" name="nama"></td>
-    </tr>
-    <tr>
-        <td>alamat</td>
-        <td>:</td>
-        <td><input type="text" name="alamat"></td>
-    </tr>
-    <tr>
-        <td>tanggal lahir</td>
-        <td>:</td>
-        <td><input type="text" name=tanggal_lahir></td>
-    </tr>
-    <tr>
-        <td>upload foto</td>
-        <td>:</td>
-        <td><input type="file" name="foto" accept="images/*"></td>
-    </tr>
-    <tr>
-        <td colspan="2"><input type="submit" name="spn" value="submit"></td>
-    </tr>
-</table>
-    </form>
-    
+            <tr>
+                <td>Nama</td>
+                <td>:</td>
+                <td><input type="text" name="nama"></td>
+            </tr>
+            <tr>
+                <td>Alamat</td>
+                <td>:</td>
+                <td><input type="textarea" name="alamat"></td>
+            </tr>
+            <tr>
+                <td>Tanggal Lahir</td>
+                <td>:</td>
+                <td><input type="date" name="tgl_lahir"></td>
+            </tr>
+            <tr>
+                <td>Upload Foto</td>
+                <td>:</td>
+                <td><input type="file" name="foto" accept="images/*"></td>
+            </tr>
+            <tr>
+                <td colspan="2"><input type="submit" name="spn" value="Simpan"></td>
+            </tr>
+        </table>
+</form>
+       
 </body>
 </html>
