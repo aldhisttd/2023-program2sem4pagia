@@ -10,7 +10,7 @@
     
     <h1>Form Data Mahasiswa</h1>
 
-    <form action="data.php" method="POST">
+    <form action="" method="POST">
 
         <label for="">Nama</label> <br>
         <input type="text" name="nama">
@@ -39,5 +39,20 @@
         <input type="submit" value ="Submit" name="proses"></input>
 
     </form>
+    <?php
+
+include "koneksi.php";
+
+    if(isset($_POST['proses'])){
+    mysqli_query($koneksi, "insert into mahasiswa set
+    Nama = '$_POST[nama]',
+    Nim = '$_POST[nim]',
+    Tanggal_Lahir ='$_POST[tgl_lahir]',
+    Alamat ='$_POST[alamat]',
+    Photo = '$_POST[photo]'");
+
+    echo "Data mahasiswa telah tersimpan";
+}
+?>
 </body>
 </html>
