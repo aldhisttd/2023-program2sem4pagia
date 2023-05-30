@@ -38,6 +38,7 @@
         <br><br>
 
         <input type="submit" value ="Submit" name="proses"></input>
+        <input type='button' value ='Cek Data'onClick='top.location ="readdata.php"'> </input>
 
     </form>
     <?php
@@ -45,6 +46,7 @@
         include "koneksi.php";
 
             if(isset($_POST['proses'])){
+                
             mysqli_query($koneksi, "insert into mahasiswa set
             Nama = '$_POST[nama]',
             Nim = '$_POST[nim]',
@@ -53,8 +55,8 @@
             Photo = '$_POST[photo]'");
 
             echo "Data mahasiswa telah tersimpan";
+            
         }
-
     ?>
 </body>
 </html>
