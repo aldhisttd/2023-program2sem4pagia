@@ -1,11 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>TUGAS DIAN AFRIANDI</title>
+  <title>TUGAS CREATE AND READ YOLANDA</title>
 </head>
 <body>
   <h1>Form Input Mahasiswa</h1>
-  <a href="hasil.php">DATA MAHASISWA PAGI</a>
   <form action="" method="post" enctype="multipart/form-data">
     <table>
     <tr>
@@ -38,34 +37,5 @@
     </table>
     <input type="submit" value="Submit" name="submit">
   </form>
-  <?php
-
-  include "koneksi.php";
-  if(isset($_POST['submit'])){
-        $nim        = $_POST['nim'];
-        $nama       = $_POST['nama'];
-        $tgl_lahir  = $_POST['tgl_lahir'];
-        $alamat     = $_POST['alamat'];
-    // 
-    $photo_name = $_FILES['photo']['name'];
-    $photo_tmp = $_FILES['photo']['tmp_name'];
-    $folder = './uploads/';
-
-    // 
-    
-    move_uploaded_file($photo_tmp, $folder.$photo_name);
-
-    // 
-    $insert = mysqli_query($koneksi, "INSERT INTO mahasiswa_pagi VALUES( NULL, '$nama' , '$tgl_lahir', '$alamat', '$photo_name')");
-    //
-    if($insert){
-      echo 'Berhasil Upload';
-    }else{
-      echo 'Gagal Uplaod';
-    }
-  }
-    ?>
-
-
 </body>
 </html>
