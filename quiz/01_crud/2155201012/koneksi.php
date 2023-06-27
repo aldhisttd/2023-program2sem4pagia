@@ -30,13 +30,13 @@ tr:nth-child(even) {
     <th>ID Karyawan</th>
     <th>Nama Karyawan</th>
     <th>Tanggal Lahir</th>
- 
+    <th>Photo
     <th>Opsi</th>
   </tr>
 
   <?php 
-    $koneksi = mysqli_connect('localhost','root','','genap');
-    $data = mysqli_query($'koneksi"', "SELECT * FROM karyawan");
+    $koneksi = mysqli_connect('localhost','root','','karyawan');
+    $data = mysqli_query($koneksi, "SELECT * FROM genap");
     $no = 1;
     while ($row=mysqli_fetch_array($data)) {
       // area php code
@@ -46,7 +46,8 @@ tr:nth-child(even) {
     <td><?php echo $no ?></td>
     <td><?php echo $row['id_karyawan'] ?></td>
     <td><?php echo $row['nama_karyawan'] ?></td>
-    <td><?php echo $row['tgl_lahir'] ?></td>
+    <td><?php echo $row[ 'tgl_lahir'] ?></td>
+    <td><?php echo $row['photo'] ?></td>
    
     <td>
       <a href="hapus.php?id_karyawan=<?php echo $row['id_karyawan'] ?>">Hapus</a> - 
