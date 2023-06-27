@@ -1,8 +1,15 @@
 <?php 
 session_start();
 
-if(!isset($_SESSION['sudah_login'])){
-    header('location:form.php');
+if (!isset($_SESSION['sudah_login']) || $_SESSION['sudah_login'] !== true) {
+    header('location: login.php');
+    exit();
+}
+
+// Periksa peran pengguna
+if ($_SESSION['username'] !== 'user') {
+    header('location: admin.php');
+    exit();
 }
 ?>
 
