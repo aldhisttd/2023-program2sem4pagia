@@ -13,12 +13,6 @@ $target_dir = "uploads/";
 $target_file = $target_dir . basename($photo_name);
 move_uploaded_file($photo_tmp, $target_file);
 
-// Menyimpan data ke database
-$servername = "localhost";
-$username = "root";
-$password = "";
-$dbname = "data_form_mahasiswa";
-
 // Konfigurasi koneksi ke database
 $servername = "localhost";
 $username = "root";
