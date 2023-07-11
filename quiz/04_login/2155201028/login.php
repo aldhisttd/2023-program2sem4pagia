@@ -16,6 +16,9 @@ if (isset($_POST['btnlogin'])) {
     $adminBenar = 'admin';
     $passAdminBenar = 'admin123';
 
+    $karyawanBenar = 'karyawan';
+    $passkaryawanBenar = 'karyawan123';
+
     // cek login
     if ($userForm == $userBenar && $passForm == $passUserBenar) {
         // login sebagai user
@@ -29,7 +32,14 @@ if (isset($_POST['btnlogin'])) {
         $_SESSION['username'] = $adminBenar;
         header('location:admin.php');
         exit(); // Keluar dari skrip setelah mengarahkan pengguna
-    } else {
+    } elseif ($userForm == $karyawanBenar && $passForm == $passkaryawanBenar) {
+        // login sebagai admin
+        $_SESSION['sudah_login'] = true;
+        $_SESSION['username'] = $karyawanBenar;
+        header('location:karyawan.php');
+        exit(); // Keluar dari skrip setelah mengarahkan pengguna
+    } 
+     else {
         // Kombinasi username dan password tidak valid
         echo "Username atau password tidak valid.";
     }

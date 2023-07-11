@@ -3,7 +3,7 @@
 echo "menghapus data";
 
 // koneksi ke db
-$koneksi = mysqli_connect('localhost','root','','phpdasar');
+$koneksi = mysqli_connect('localhost','root','','quiz_genap');
 
 // jalankan query
 $id_karyawan = $_REQUEST['id_karyawan'];

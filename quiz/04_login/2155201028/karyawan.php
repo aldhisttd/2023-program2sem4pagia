@@ -7,8 +7,8 @@ if (!isset($_SESSION['sudah_login']) || $_SESSION['sudah_login'] !== true) {
 }
 
 // Periksa peran pengguna
-if ($_SESSION['username'] !== 'admin') {
-    header('location: user.php');
+if ($_SESSION['username'] !== 'karyawan') {
+    header('location: admin.php');
     exit();
 }
 ?>
@@ -24,6 +24,6 @@ if ($_SESSION['username'] !== 'admin') {
 <body>
     <p>Login sbg : <?php echo $_SESSION['username'] ?></p>
     <p><a href="logout.php">Logout</a></p>
-    <h1>Selamat Datang di Halaman Admin</h1>
+    <h1>Welcome To Halaman Karyawan</h1>
 </body>
 </html>

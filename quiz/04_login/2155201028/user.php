@@ -24,6 +24,6 @@ if ($_SESSION['username'] !== 'user') {
 <body>
     <p>Login sbg : <?php echo $_SESSION['username'] ?></p>
     <p><a href="logout.php">Logout</a></p>
-    <h1>Selamat Datang di Halaman User</h1>
+    <h1>Welcome To di Halaman User</h1>
 </body>
 </html>

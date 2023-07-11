@@ -21,32 +21,33 @@ tr:nth-child(even) {
 </head>
 <body>
 
-<h2>Data Karyawan</h2>
+<h2>Pembayaran</h2>
 
 <table>
 
   <tr>
-    <th>No</th>
-    <th>ID Karyawan</th>
-    <th>Nama Karyawan</th>
-    <th>Tanggal Lahir</th>
- 
-    <th>Opsi</th>
+    <th>Nomor Tagihan</th>
+    <th>Tagihan</th>
+    <th>Jenis Tagihan</th>
+    <th>Nominal</th>
+    <th>Bukti Transfer</th>
   </tr>
 
   <?php 
-    $koneksi = mysqli_connect('localhost','root','','genap');
-    $data = mysqli_query($koneksi, "SELECT * FROM karyawan");
+    $koneksi = mysqli_connect('localhost','root','','quiz_genap');
+    $data = mysqli_query($koneksi, "SELECT * FROM tabel_pembayaran");
     $no = 1;
-    while ($row=mysqli_fetch_array($data)) {
+    while ($row=mysqli_fetch_array($quiz_genap)) {
       // area php code
   ?>
   <!-- area html -->
   <tr>
-    <td><?php echo $no ?></td>
-    <td><?php echo $row['id_karyawan'] ?></td>
-    <td><?php echo $row['nama_karyawan'] ?></td>
-    <td><?php echo $row['tgl_lahir'] ?></td>
+    <td><?php echo $row['nomor_tagihan'] ?></td>
+    <td><?php echo $row['tanggal'] ?></td>
+    <td><?php echo $row['jenis_tagihan'] ?></td>
+    <td><?php echo $row['nominal'] ?></td>
+    <td><?php echo $row['bukti_transfer'] ?></td>
+  
    
     <td>
       <a href="hapus.php?id_karyawan=<?php echo $row['id_karyawan'] ?>">Hapus</a> - 
