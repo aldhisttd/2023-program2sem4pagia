@@ -11,7 +11,11 @@
         <label for="judul">Judul Buku:</label><br>
         <input type="text" id="judul" name="judul" required><br><br>
         <label for="kategori">Kategori:</label><br>
-        <input type="text" id="kategori" name="kategori" required><br><br>
+        <select name="kategori" id="kategori">
+            <option value="Komik">Komik</option>
+            <option value="Novel">Novel</option>
+            <option value="Kamus">Kamus</option>
+        </select><br><br>
         <label for="stok">Stok:</label><br>
         <input type="number" id="stok" name="stok" required><br><br>
         <label for="ebook">File Ebook:</label><br>
