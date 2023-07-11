@@ -24,6 +24,7 @@ if ($_FILES['file']['file'] != "") {
     $ext = "." . pathinfo($path, PATHINFO_EXTENSION);
     $file = md5(time()) . $ext;
     move_uploaded_file($_FILES['file']['tmp_name'], '../file/' . $judul);
+    
 
     // update nama photo ke photo baru
     mysqli_query($koneksi, "UPDATE tb_buku SET file='$judul' WHERE isbn='$isbn'");
