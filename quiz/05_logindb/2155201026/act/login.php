@@ -6,7 +6,7 @@ session_start();
 //     exit(); // Keluar dari skrip setelah mengarahkan pengguna
 // }
 
-$koneksi = mysqli_connect("localhost","root","","user_db");
+$koneksi = mysqli_connect("localhost","root","","user_dtb");
 
 if (isset($_POST['btnlogin'])) {
     $userForm = $_POST['userform'];
@@ -21,7 +21,7 @@ if (isset($_POST['btnlogin'])) {
     // $karyawanBenar = 'karyawan';
     // $passkaryawanBenar = 'karyawan123';
 
-    $login = mysqli_query($koneksi,"SELECT * FROM akun WHERE username='$userForm' and password='$passForm'");
+    $login = mysqli_query($koneksi,"SELECT * FROM akun WHERE username='$userForm' and pass='$passForm'");
     $cek = mysqli_num_rows($login);
 
     if($cek > 0){
