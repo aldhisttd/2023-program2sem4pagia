@@ -24,7 +24,7 @@
 
 <body>
   <?php include "component/menu.php" ?>
-  <h2>Data Karyawan</h2>
+  <h2>Data Mahasiswa</h2>
 
   <table>
     <tr>
