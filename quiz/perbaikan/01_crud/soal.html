@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz 03 CRUD</title>
+    <style>
+        table {
+            border-collapse: collapse;
+        }
+
+        td,
+        th {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+
+        tr:nth-child(even) {
+            background-color: #dddddd;
+        }
+    </style>
+</head>
+
+<body>
+    <h4>Pilihan Soal</h4>
+    <ol>
+        <li>Seri soal ada 2, GENAP dan GANJIL</li>
+        <li>Silahkan pilih soal sesuai dengan angka digit terakhir NIM kalian, Ganjil atau Genap</li>
+        <li>Untuk angka digit akhir 0, pilih yang GENAP</li>
+    </ol>
+
+    <h4>Instruksi Soal</h4>
+    <ol>
+        <li>Buat dulu branch anda dari branch master</li>
+        <li>Ketentuan nama branch adalah: <strong>perbaikan/ganjil_NIM</strong> atau <strong>quiz3/genap_NIM</strong></li>
+        <li>Lokasi project kalian beradan di folder <strong>quiz/perbaikan/01_crud/NIM</strong></li>
+        <li>Buat database sesuai dengan rancangan tabel yang sudah di tentukan</li>
+        <li>Lalu buat modul <strong>READ, UPDATE, DELETE</strong> sesuai dengan materi di folder <strong>materi/crud</strong></li>
+        <li>Lakukan PR dengan nama branch tadi dan jangan lupa untuk melampirkan hasil output dari program</li>
+        <li>Jangan lupa di PR nya untuk menambahkan saya sebagai reviewer, ada di bagian kanan ketika PR</li>
+        <li>Ikuti semua instruksi dengan benar. Tertib dan kerjakan sendiri, semua akhtivitas kalian terpantau CCTV.</li>
+
+    </ol>
+
+    <table>
+        <tr>
+            <td>
+                <h4>Ganjil</h4>
+                <table>
+                    <tr>
+                        <th colspan="4">Tabel = mahasiswa</th>
+                    </tr>
+                    <tr>
+                        <th>Nama Field</th>
+                        <th>Tipe Data</th>
+                        <th>Jenis Input</th>
+                    </tr>
+                    <tr>
+                        <td>nim</td>
+                        <td>string</td>
+                        <td>input text</td>
+                    </tr>
+                    <tr>
+                        <td>nama</td>
+                        <td>string</td>
+                        <td>input text</td>
+                    </tr>
+                    <tr>
+                        <td>jurusan</td>
+                        <td>string</td>
+                        <td>select option (novel, komik, kamus)</td>
+                    </tr>
+                    <tr>
+                        <td>umur</td>
+                        <td>number</td>
+                        <td>number</td>
+                    </tr>
+                    <tr>
+                        <td>photo</td>
+                        <td>string</td>
+                        <td>input file (upload file photo)</td>
+                    </tr>
+                </table>
+            </td>
+
+            <td>
+                <h4>Genap</h4>
+                <table>
+                    <tr>
+                        <th colspan="4">Tabel = kendaraan</th>
+                    </tr>
+                    <tr>
+                        <th>Nama Field</th>
+                        <th>Tipe Data</th>
+                        <th>Jenis Input</th>
+                    </tr>
+                    <tr>
+                        <td>kode</td>
+                        <td>string</td>
+                        <td>input text</td>
+                    </tr>
+                    <tr>
+                        <td>tanggal_masuk</td>
+                        <td>date</td>
+                        <td>input date</td>
+                    </tr>
+                    <tr>
+                        <td>jenis_kendaraan</td>
+                        <td>string</td>
+                        <td>select option (SUV, City Car, Sedan)</td>
+                    </tr>
+                    <tr>
+                        <td>harga</td>
+                        <td>number</td>
+                        <td>number</td>
+                    </tr>
+                    <tr>
+                        <td>photo</td>
+                        <td>string</td>
+                        <td>input file (upload file gambar)</td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+
+
+
+</html>
