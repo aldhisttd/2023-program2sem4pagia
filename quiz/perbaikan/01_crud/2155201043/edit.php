@@ -16,7 +16,7 @@
     // koneksi
     include "action/koneksi.php";
     // jalankan query select dengan condition 
-    $q = mysqli_query($koneksi, "SELECT * FROM db_mahasiswa WHERE nim='$nim'");
+    $q = mysqli_query($koneksi, "SELECT * FROM mahasiswa WHERE nim='$nim'");
     // simpan dalam format array
     $ary = mysqli_fetch_array($q);
     ?>

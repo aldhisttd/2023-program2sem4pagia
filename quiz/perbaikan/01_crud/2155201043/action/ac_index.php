@@ -9,7 +9,7 @@ $nama = $_POST['nama'];
 $jurusan = $_POST['jurusan'];
 $umur = $_POST['umur'];
 
-$query = "INSERT INTO db_mahasiswa (nim,nama,jurusan,umur,photo) VALUES ('$nim','$nama','$jurusan','$umur','$photo')";
+$query = "INSERT INTO mahasiswa (nim,nama,jurusan,umur,photo) VALUES ('$nim','$nama','$jurusan','$umur','$photo')";
 
 include "koneksi.php";
 

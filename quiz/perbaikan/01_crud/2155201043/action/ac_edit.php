@@ -11,7 +11,7 @@ include "koneksi.php";
 if ($_FILES['photo']['name'] != "") {
 
     // ambil nama photo lama
-    $q = mysqli_query($koneksi, "SELECT photo FROM db_mahasiswa WHERE nim='$nim'");
+    $q = mysqli_query($koneksi, "SELECT photo FROM mahasiswa WHERE nim='$nim'");
     $dt = mysqli_fetch_array($q);
     $photo = $dt['photo'];
 
@@ -26,10 +26,10 @@ if ($_FILES['photo']['name'] != "") {
     
 
     // update nama photo ke photo baru
-    mysqli_query($koneksi, "UPDATE db_mahasiswa SET photo='$namaphoto' WHERE nim='$nim'");
+    mysqli_query($koneksi, "UPDATE mahasiswa SET photo='$namaphoto' WHERE nim='$nim'");
 }
 
 // update dengan condition
-mysqli_query($koneksi, "UPDATE db_mahasiswa SET nama='$nama', jurusan='$jurusan', umur='$umur', photo='$namaphoto' WHERE nim='$nim'");
+mysqli_query($koneksi, "UPDATE mahasiswa SET nama='$nama', jurusan='$jurusan', umur='$umur', photo='$namaphoto' WHERE nim='$nim'");
 // pindah kehalaman data.php
 header("location:../data.php");
