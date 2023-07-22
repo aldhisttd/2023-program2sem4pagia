@@ -15,24 +15,24 @@
 
         <table>
             <tr>
-                <td>Nim</td>
+                <td>NIM</td>
                 <td>:</td>
                 <td>
                     <input type="text" name="nim">
                 </td>
             </tr>
             <tr>
-                <td>Nama</td>
+                <td>NAMA</td>
                 <td>:</td>
                 <td>
                     <input type="text" name="nama">
                 </td>
             </tr>
             <tr>
-                <td>Jurusan</td>
+                <td>JURUSAN</td>
                 <td>:</td>
                 <td>
-                        <select input type="text" name="jurusan">">
+                        <select input type="text" name="jurusan" value="<?php echo $kategori ?>">
                             <option value="">Pilih Kategori</option>
                             <option value="Informatika">Informatika</option>
                             <option value="Industri">Industri</option>
@@ -41,17 +41,17 @@
                 </td>
             </tr>
             <tr>
-                <td>Umur</td>
+                <td>UMUR</td>
                 <td>:</td>
                 <td>
                     <input type="number" name="umur">
                 </td>
             </tr>
             <tr>
-                <td>Photo</td>
+                <td>PHOTO</td>
                 <td>:</td>
                 <td>
-                    <input type="file" name="foto">
+                    <input type="file" name="photo">
                 </td>
             </tr>
             <tr>
@@ -59,7 +59,7 @@
                 <td></td>
                 <td>
                     <br><br>
-                    <button type="submit">Simpan
+                    <button type="submit">Save your data
                     </button>
                 </td>
             </tr>

@@ -8,28 +8,28 @@ $umur = $_POST['umur'];
 
 // koneksi
 include "koneksi.php";
-if ($_FILES['foto']['name'] != "") {
+if ($_FILES['photo']['name'] != "") {
 
     // ambil nama photo lama
-    $q = mysqli_query($koneksi, "SELECT foto FROM perbaikan_crud WHERE nim='$nim'");
+    $q = mysqli_query($koneksi, "SELECT photo FROM perbaikan_crud WHERE nim='$nim'");
     $dt = mysqli_fetch_array($q);
-    $photo = $dt['foto'];
+    $photo = $dt['photo'];
 
     // hapus photo lama
-    unlink('../uploads/'.$photo);
+    unlink('../upload/'.$photo);
 
     // upload photo baru
-    $path = $_FILES['foto']['name'];
+    $path = $_FILES['photo']['name'];
     $ext = "." . pathinfo($path, PATHINFO_EXTENSION);
     $namaphoto = md5(time()) . $ext;
-    move_uploaded_file($_FILES['foto']['tmp_name'], '../uploads/' . $namaphoto);
+    move_uploaded_file($_FILES['photo']['tmp_name'], '../upload/' . $namaphoto);
     
 
     // update nama photo ke photo baru
-    mysqli_query($koneksi, "UPDATE perbaikan_crud SET foto='$namaphoto' WHERE nim='$nim'");
+    mysqli_query($koneksi, "UPDATE perbaikan_crud SET photo='$namaphoto' WHERE nim='$nim'");
 }
 
 // update dengan condition
-mysqli_query($koneksi, "UPDATE perbaikan_crud SET nama='$nama', jurusan='$jurusan', umur='$umur', foto='$namaphoto' WHERE nim='$nim'");
+mysqli_query($koneksi, "UPDATE perbaikan_crud SET nama='$nama', jurusan='$jurusan', umur='$umur', photo='$namaphoto' WHERE nim='$nim'");
 // pindah kehalaman data.php
 header("location:../data.php");

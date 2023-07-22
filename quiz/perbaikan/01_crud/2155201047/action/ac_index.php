@@ -1,15 +1,15 @@
 <?php
-$path = $_FILES['foto']['name'];
+$path = $_FILES['photo']['name'];
 $ext = "." . pathinfo($path, PATHINFO_EXTENSION);
 $photo = md5(time()) . $ext;
-move_uploaded_file($_FILES['foto']['tmp_name'], '../uploads/' . $photo);
+move_uploaded_file($_FILES['photo']['tmp_name'], '../upload/' . $photo);
 
 $nim = $_POST['nim'];
 $nama = $_POST['nama'];
 $jurusan = $_POST['jurusan'];
 $umur = $_POST['umur'];
 
-$query = "INSERT INTO perbaikan_crud (nim,nama,jurusan,umur,foto) VALUES ('$nim','$nama','$jurusan','$umur','$photo')";
+$query = "INSERT INTO perbaikan_crud (nim,nama,jurusan,umur,photo) VALUES ('$nim','$nama','$jurusan','$umur','$photo')";
 
 include "koneksi.php";
 

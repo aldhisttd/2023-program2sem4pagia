@@ -28,28 +28,26 @@
 
   <table>
     <tr>
-      <th>NO</th>
-      <th>Nim</th>
-      <th>Nama</th>
-      <th>Jurusan</th>  
-      <th>Umur</th>
-	    <th>Photo</th>
-      <th>Aksi</th>
+      <th>NIM</th>
+      <th>NAMA</th>
+      <th>JURUSAN</th>  
+      <th>UMUR</th>
+	    <th>PHOTO</th>
+      <th>AKSI</th>
     </tr>
     <?php
     include "action/koneksi.php";
     $data = mysqli_query($koneksi, "SELECT * FROM perbaikan_crud");
-    $no = 1;
+
     while ($row = mysqli_fetch_array($data)) {
     ?>
       <tr>
-        <td><?php echo $no ?></td>
         <td><?php echo $row['nim'] ?></td>
         <td><?php echo $row['nama'] ?></td>
         <td><?php echo $row['jurusan'] ?></td>
         <td><?php echo $row['umur'] ?></td>
         <td>
-          <img src="uploads/<?php echo $row['foto'] ?>" width="250px" height="250px">
+          <img src="upload/<?php echo $row['photo'] ?>" width="250px" height="250px">
         </td>
         <td>
           <a href="edit.php?nim=<?php echo $row['nim'] ?>">Edit</a> 
@@ -57,7 +55,6 @@
         </td>
       </tr>
     <?php
-    $no++;
     }
     ?>
 

@@ -60,7 +60,7 @@
                 <td>Photo</td>
                 <td>:</td>
                 <td>
-                    <input type="file" name="foto" value="<?php echo $ary['foto'] ?>">
+                    <input type="file" name="photo" value="<?php echo $ary['photo'] ?>">
                 </td>
             </tr>
             <tr>
@@ -68,7 +68,7 @@
                 <td></td>
                 <td>
                     <br><br>
-                    <button type="submit">Update</button>
+                    <button type="submit">Update Data Anda</button>
                 </td>
             </tr>
         </table>
