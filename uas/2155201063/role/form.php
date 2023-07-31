@@ -1,0 +1,54 @@
+<?php
+include "act/login.php";
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Login</title>
+</head>
+<style>
+    .center-form{
+    
+justify-content: center;
+
+display: flex;
+
+margin: 40px 50px;
+
+border: 3px solid blue;
+
+padding: 30px;
+
+background-color: rgb(208, 205, 248);
+
+}
+</style>
+<body>
+<div class="center-form">
+    <form action="act/login.php" method="POST">
+
+        <table style="justify-content:center; display: flex;">
+            <tr>
+                <td>Username</td>
+                <td>:</td>
+                <td><input type="text" name="userform"></td>
+            </tr>
+            <tr>
+                <td>Password</td>
+                <td>:</td>
+                <td><input type="password" name="passform"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td><input type="submit" name="btnlogin" value="Login"></td>
+            </tr>
+        </table>
+
+    </form>
+</div>
+</body>
+</html>
