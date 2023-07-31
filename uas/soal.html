@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SOAL UAS</title>
+    <style>
+        table {
+            border-collapse: collapse;
+        }
+
+        td,
+        th {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+
+        tr:nth-child(even) {
+            background-color: #dddddd;
+        }
+    </style>
+
+    <script>
+        setTimeout(function(){
+            window.location.reload();
+         }, 2000);
+    </script>
+</head>
+
+<body>
+
+    <table style="width: 100%;">
+        <tr>
+            <td width="80"><strong>Soal</strong></td>
+            <td width="5">:</td>
+            <td>Ujian Akhir Semester (UAS)</td>
+            <td width="80"><strong>Semester</strong></td>
+            <td width="5">:</td>
+            <td>IV (2023 Genap)</td>
+        </tr>
+        <tr>
+            <td><strong>Tanggal</strong></td>
+            <td>:</td>
+            <td>01 Agustus 2023</td>
+            <td><strong>Kelas</strong></td>
+            <td>:</td>
+            <td>Pagi A</td>
+        </tr>
+        <tr>
+            <td><strong>Waktu</strong></td>
+            <td>:</td>
+            <td>08:00 - 10:30 WIB</td>
+            <td><strong>Jenis</strong></td>
+            <td>:</td>
+            <td>Individual (No Team Work)</td>
+        </tr>
+        
+    </table>
+
+    <h4>Pilihan Soal</h4>
+    <ol>
+        <li>Seri soal ada 2, GENAP dan GANJIL</li>
+        <li>Silahkan pilih soal sesuai dengan angka digit terakhir NIM kalian, Ganjil atau Genap</li>
+        <li>Untuk angka digit akhir 0, pilih yang GENAP</li>
+    </ol>
+
+    <h4>Instruksi</h4>
+    <ol>
+        <li>Source branch = <code><strong>master</strong></code></li>
+        <li>Ketentuan nama branch : <code><strong>uas/NIM</strong></code></li>
+        <li>Jika sudah selesai lakukan PR dengan judul PR : <code><strong>uas/crud/NIM/NAMA_LENGKAP</strong></code></li>
+        <li>Mention saya di bagian description PR kalian</li>
+        <li>Add saya sebagai Reviewer di PR kalian</li>
+
+    </ol>
+
+    <h4>Soal</h4>
+    <ol>
+        <li>Buatlah full aplikasi sederhana CRUD + LoginDB dari data di bawah</li>
+        <li>Lokasi project berada di folder <code><strong>uas/NIM</strong></code></li>
+        <li>Nama database harus sesuai dengan NIM kalian masing-masing</li>
+        <li>Table Name, Field Name & Data Type harus sesuai dan identik dengan data table kalian</li>
+        <li>Input Type mengacu pada jenis form</li>
+        <li>Jangan lupa screenshot aplikasi dan database nya dan lampirkan di bagian description</li>
+
+    </ol>
+
+    <table>
+        <tr>
+            <td>
+                <h4>Ganjil</h4>
+                <table>
+                    <tr>
+                        <th colspan="4">Table Name = laptop</th>
+                    </tr>
+                    <tr>
+                        <th>Field Name</th>
+                        <th>Data Type</th>
+                        <th>Input Type</th>
+                    </tr>
+                    <tr>
+                        <td>kode</td>
+                        <td>string</td>
+                        <td>input text</td>
+                    </tr>
+                    <tr>
+                        <td>tanggal_masuk</td>
+                        <td>date</td>
+                        <td>input date</td>
+                    </tr>
+                    <tr>
+                        <td>jenis</td>
+                        <td>string</td>
+                        <td>select option (Office, Gaming, Content Creator)</td>
+                    </tr>
+                    <tr>
+                        <td>quantity</td>
+                        <td>number</td>
+                        <td>number</td>
+                    </tr>
+                    <tr>
+                        <td>spesifikasi</td>
+                        <td>text</td>
+                        <td>textarea</td>
+                    </tr>
+                    <tr>
+                        <td>gambar</td>
+                        <td>string</td>
+                        <td>input file (upload file gambar)</td>
+                    </tr>
+                </table>
+            </td>
+
+            <td>
+                <h4>Genap</h4>
+                <table>
+                    <tr>
+                        <th colspan="4">Table Name = software</th>
+                    </tr>
+                    <tr>
+                        <th>Field Name</th>
+                        <th>Data Type</th>
+                        <th>Input Type</th>
+                    </tr>
+                    <tr>
+                        <td>sn</td>
+                        <td>string</td>
+                        <td>input text</td>
+                    </tr>
+                    <tr>
+                        <td>tanggal_rilis</td>
+                        <td>date</td>
+                        <td>input date</td>
+                    </tr>
+                    <tr>
+                        <td>jenis</td>
+                        <td>string</td>
+                        <td>select option (Editing, Coding, Tools)</td>
+                    </tr>
+                    <tr>
+                        <td>quantity</td>
+                        <td>integer</td>
+                        <td>number</td>
+                    </tr>
+                    <tr>
+                        <td>spesifikasi</td>
+                        <td>text</td>
+                        <td>textarea</td>
+                    </tr>
+                    <tr>
+                        <td>gambar</td>
+                        <td>string</td>
+                        <td>input file (upload file gambar)</td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+
+
+
+</html>
