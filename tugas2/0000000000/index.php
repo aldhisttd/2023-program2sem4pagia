@@ -10,7 +10,7 @@
     
     <h1>Form</h1>
 
-    <form action="proses.php" method="POST" enctype="multipart/form-data">
+    <form action="proses.php" method="POST" enctype="multipart/form-data" action="upload-script.php">
 
         <label for="">Nama</label> <br>
         <input type="text" name="nama">
