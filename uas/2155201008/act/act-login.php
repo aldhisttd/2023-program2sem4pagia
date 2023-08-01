@@ -36,6 +36,6 @@ if (isset($_POST['btnlogin'])) {
         // cek jika user login sebagai karyawan
         }
     }else{
-        header("location:form.php?pesan=gagal");
+        header("location:index.php?pesan=gagal");
     }
 }  

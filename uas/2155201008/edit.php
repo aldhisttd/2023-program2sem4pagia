@@ -1,3 +1,24 @@
+<?php
+session_start();
+
+if (!isset($_SESSION['sudah_login'])) {
+    header('location: ../admin.php');
+    exit();
+}
+
+// Periksa peran pengguna
+// Periksa peran pengguna
+if ($_SESSION['username'] === 'admin') {
+    // User adalah admin, lanjutkan ke halaman admin
+    // ...
+} elseif ($_SESSION['username'] === 'user') {
+    // User adalah user, lanjutkan ke halaman user
+    header('location: role/user.php');
+    exit();
+}
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 

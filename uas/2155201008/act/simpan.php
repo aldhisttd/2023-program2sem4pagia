@@ -26,6 +26,6 @@ if(isset($_POST['simpan'])){
         echo "Error: " . $sql . "<br>" . $koneksi->error;
     }
 }
-
+header("location:../role/admin.php");
  
 $koneksi->close();

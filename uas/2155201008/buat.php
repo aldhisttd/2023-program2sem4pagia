@@ -1,3 +1,24 @@
+<?php
+session_start();
+
+if (!isset($_SESSION['sudah_login'])) {
+    header('location: ../admin.php');
+    exit();
+}
+
+// Periksa peran pengguna
+// Periksa peran pengguna
+if ($_SESSION['username'] === 'admin') {
+    // User adalah admin, lanjutkan ke halaman admin
+    // ...
+} elseif ($_SESSION['username'] === 'user') {
+    // User adalah user, lanjutkan ke halaman user
+    header('location: role/user.php');
+    exit();
+}
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -10,7 +31,7 @@
 
 <body>
 
-    <form action="action/simpan.php" method="POST" enctype="multipart/form-data">
+    <form action="act/simpan.php" method="POST" enctype="multipart/form-data">
 
         <table>
             <tr>
@@ -31,7 +52,7 @@
                 <td>Jenis Software</td>
                 <td>:</td>
                 <td>
-                        <select input type="text" name="kategori" value="<?php echo $jenis ?>">
+                        <select input type="text" name="jenis" value="<?php echo $jenis ?>">
                             <option value="">Pilih Kategori</option>
                             <option value="editing">Editing</option>
                             <option value="coding">Coding</option>
