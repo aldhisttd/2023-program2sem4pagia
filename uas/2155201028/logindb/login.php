@@ -1,0 +1,73 @@
+<?php
+session_start();
+
+// if (isset($_SESSION['sudah_login'])) {
+//     header('location:admin.php');
+//     exit(); // Keluar dari skrip setelah mengarahkan pengguna
+// }
+
+$koneksi = mysqli_connect("localhost","root","","admin");
+
+if (isset($_POST['btnlogin'])) {
+    $userForm = $_POST['userform'];
+    $passForm = $_POST['passform'];
+
+    // $userBenar = 'software';
+    // $passUserBenar = 'software123';
+
+
+    $login = mysqli_query($koneksi,"SELECT * FROM admin1 WHERE username='$userForm' and pass='$passForm'");
+    $cek = mysqli_num_rows($login);
+    
+
+    if($cek > 0){
+
+        $data = mysqli_fetch_assoc($login);
+
+        // cek jika user login sebagai software
+        if($data['username']=="software"){
+
+            // buat session login dan username
+            $_SESSION['sudah_login'] = $userForm;
+            $_SESSION['username'] = "software";
+            // alihkan ke halaman dashboard software
+            header("location:../software.php");
+
+        }else{
+
+            // alihkan ke halaman login kembali
+            header("location:login.php?pesan=gagal");
+        }	
+    }else{
+        header("location:index.php?pesan=gagal");
+    }
+}  
+    ?>
+
+
+    <!-- // cek login
+    if ($userForm == $userBenar && $passForm == $passUserBenar) {
+        // login sebagai user
+        $_SESSION['sudah_login'] = true;
+        $_SESSION['username'] = $userBenar;
+        header('location:user.php');
+        exit(); // Keluar dari skrip setelah mengarahkan pengguna
+    } elseif ($userForm == $adminBenar && $passForm == $passAdminBenar) {
+        // login sebagai admin
+        $_SESSION['sudah_login'] = true;
+        $_SESSION['username'] = $adminBenar;
+        header('location:admin.php');
+        exit(); // Keluar dari skrip setelah mengarahkan pengguna
+    } elseif ($userForm == $karyawanBenar && $passForm == $passkaryawanBenar){
+        // Login sebagaikaryawan
+        $_SESSION['sudah_login'] = true;
+        $_SESSION['username'] = $karyawanBenar;
+        header("Location:karyawan.php");
+        exit();
+    }
+    else {
+        // Kombinasi username dan password tidak valid
+        echo "Username atau password tidak valid.";
+    }
+}
+?> -->
